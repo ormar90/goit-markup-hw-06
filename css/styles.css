@@ -669,13 +669,14 @@ img {
 }
 
 .menu-button {
+  display: inline-block;
   padding: 6px 22px;
   border-radius: 4px;
   border: 0;
   font-family: inherit;
   background-color: var(--gray-background);
   color: var(--header-color);
-  font-weight: 500;
+  
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
@@ -687,6 +688,16 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.select-item {
+  position: absolute;
+}
+
+.select-item:checked+.menu-button {
+  background-color: var(--accent-hover-color);
+  color: var(--basic-white-color);
+  box-shadow: var(--button-shadow);
+}
+
 .menu-button:hover,
 .menu-button:focus {
   background-color: var(--accent-color);
@@ -694,11 +705,6 @@ img {
   box-shadow: var(--button-shadow);
 }
 
-.menu-button.active {
-  background-color: var(--accent-color);
-  color: var(--basic-white-color);
-  box-shadow: var(--button-shadow);
-}
 
 /*---------------------PROJECTS------------------*/
 .projects {

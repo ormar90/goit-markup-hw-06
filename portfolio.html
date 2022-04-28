@@ -50,11 +50,30 @@
       <div class="container">
         <h1 class="title visually-hidden">Портфолио</h1>
         <ul class="menu list">
-          <li class="list-item"><button type="button" class="menu-button active">Все</button></li>
-          <li class="list-item"><button type="button" class="menu-button">Веб-сайты</button></li>
-          <li class="list-item"><button type="button" class="menu-button">Приложения</button></li>
-          <li class="list-item"><button type="button" class="menu-button">Дизайн</button></li>
-          <li class="list-item"><button type="button" class="menu-button">Маркетинг</button></li>
+          <li class="list-item">
+            <input class="select-item visually-hidden" id="all" type="radio" name="select-item" value="All" checked>
+            <label for="all" class="menu-button">Все</label>
+          </li>
+
+          <li class="list-item">
+            <input class="select-item visually-hidden" id="all-web" type="radio" name="select-item" value="All">
+            <label for="all-web" class="menu-button">Веб-сайты</label>
+          </li>
+
+          <li class="list-item">
+            <input class="select-item visually-hidden" id="apps" type="radio" name="select-item" value="All">
+            <label for="apps" class="menu-button">Приложения</label>
+          </li>
+
+          <li class="list-item">
+            <input class="select-item visually-hidden" id="design" type="radio" name="select-item" value="All">
+            <label for="design" class="menu-button">Дизайн</label>
+          </li>
+
+          <li class="list-item">
+            <input class="select-item visually-hidden" id="marketing" type="radio" name="select-item" value="All">
+            <label for="marketing" class="menu-button">Маркетинг</label>
+          </li>
         </ul>
 
         <ul class="projects list">
