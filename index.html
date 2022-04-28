@@ -412,10 +412,10 @@
         <form action="#" class="subscribe">
           <b class="subscribe-title">Подпишитесь на рассылку</b>
           <label class="subscribe-filed">
-            <span class="subscribe-label">E-mail</span>
             <input type="email" name="user-email" class="subscribe-input" placeholder=" " required>
-
+            <span class="subscribe-label">E-mail</span>
           </label>
+
           <button class="subscribe-button button" type="submit">Подписаться
             <svg class="icon-send">
               <use href="./images/icons.svg#icon-send" width="24px" height="24px"></use>
@@ -440,16 +440,25 @@
         <label class="modal-contact-filed">
           <span class="modal-contact-label">Имя</span>
           <input type="text" name="user-name" class="modal-contact-input" required>
+          <svg class="icon-person contact-icon" height="18px" width="18px">
+            <use href="./images/icons.svg#icon-person"></use>
+          </svg>
         </label>
 
         <label class="modal-contact-filed">
           <span class="modal-contact-label">Телефон</span>
           <input type="tel" name="user-phone" class="modal-contact-input" required>
+          <svg class="icon-phone contact-icon" height="18px" width="18px">
+            <use href="./images/icons.svg#icon-phone"></use>
+          </svg>
         </label>
 
         <label class="modal-contact-filed">
           <span class="modal-contact-label">Почта</span>
           <input type="email" name="user-email" class="modal-contact-input" required>
+          <svg class="icon-email contact-icon" height="18px" width="18px">
+            <use href="./images/icons.svg#icon-email"></use>
+          </svg>
         </label>
 
         <label class="modal-contact-filed">
@@ -458,7 +467,10 @@
         </label>
 
         <label class="modal-contact-agreement">
-          <input type="checkbox" name="agreement" value="agree" required>
+          <input type="checkbox" name="agreement" value="agree" class="agreement-input visually-hidden" required>
+          <svg class="icon-check" width="15px" height="15px">
+            <use href="./images/icons.svg#icon-check"></use>
+          </svg>
           <span class="agreement-text">Соглашаюсь с рассылкой и принимаю <a class="agreement-link" href="#">Условия
               договора</a></span>
         </label>
