@@ -51,28 +51,23 @@
         <h1 class="title visually-hidden">Портфолио</h1>
         <ul class="menu list">
           <li class="list-item">
-            <input class="select-item visually-hidden" id="all" type="radio" name="select-item" value="All" checked>
-            <label for="all" class="menu-button">Все</label>
+            <button type="button" class="menu-button active">Все</button>
           </li>
 
           <li class="list-item">
-            <input class="select-item visually-hidden" id="all-web" type="radio" name="select-item" value="All">
-            <label for="all-web" class="menu-button">Веб-сайты</label>
+            <button type="button" class="menu-button">Веб-сайты</button>
           </li>
 
           <li class="list-item">
-            <input class="select-item visually-hidden" id="apps" type="radio" name="select-item" value="All">
-            <label for="apps" class="menu-button">Приложения</label>
+            <button type="button" class="menu-button">Приложения</button>
           </li>
 
           <li class="list-item">
-            <input class="select-item visually-hidden" id="design" type="radio" name="select-item" value="All">
-            <label for="design" class="menu-button">Дизайн</label>
+            <button type="button" class="menu-button">Дизайн</button>
           </li>
 
           <li class="list-item">
-            <input class="select-item visually-hidden" id="marketing" type="radio" name="select-item" value="All">
-            <label for="marketing" class="menu-button">Маркетинг</label>
+            <button type="button" class="menu-button">Маркетинг</button>
           </li>
         </ul>
 
@@ -220,7 +215,6 @@
     </section>
   </main>
 
-  <!-- footer  -->
   <footer class="footer">
     <div class="container">
       <div>
@@ -244,8 +238,9 @@
           </ul>
         </address>
       </div>
+
       <div class="footer-follow">
-        <p class="footer-follow-paragraph">присоединяйтесь</p>
+        <strong class="footer-follow-paragraph">присоединяйтесь</strong>
         <ul class="footer-follow-list list">
           <li class="footer-follow-item"><a class="follow-link" href="">
               <svg class="footer-icon" height="20px" width="20px">
@@ -275,7 +270,7 @@
       </div>
 
       <form action="#" class="subscribe">
-        <b class="subscribe-title">Подпишитесь на рассылку</b>
+        <strong class="subscribe-title">Подпишитесь на рассылку</strong>
         <label class="subscribe-filed">
           <input type="email" name="user-email" class="subscribe-input" placeholder=" " required>
           <span class="subscribe-label">E-mail</span>

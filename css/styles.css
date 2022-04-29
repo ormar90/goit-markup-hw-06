@@ -461,6 +461,7 @@ img {
   border-radius: 4px;
   background-color: var(--basic-white-color);
   color: var(--icon-color);
+  outline: transparent;
 
   transition-property: border-color, color;
   transition-duration: 250ms;
@@ -537,10 +538,11 @@ img {
 }
 
 .footer-follow {
-  margin-left: 70px;
+  margin-left: 85px;
 }
 
 .footer-follow-paragraph {  
+  display: block;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -571,7 +573,7 @@ img {
 /* ---------------------SUBSCRIBE-------------------- */
 
 .subscribe {
-  margin-left: 93px;
+  margin-left: 94px;
   flex-grow: 1;
 }
 
@@ -669,14 +671,13 @@ img {
 }
 
 .menu-button {
-  display: inline-block;
   padding: 6px 22px;
   border-radius: 4px;
   border: 0;
   font-family: inherit;
   background-color: var(--gray-background);
   color: var(--header-color);
-  
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
@@ -688,16 +689,6 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.select-item {
-  position: absolute;
-}
-
-.select-item:checked+.menu-button {
-  background-color: var(--accent-hover-color);
-  color: var(--basic-white-color);
-  box-shadow: var(--button-shadow);
-}
-
 .menu-button:hover,
 .menu-button:focus {
   background-color: var(--accent-color);
@@ -705,6 +696,11 @@ img {
   box-shadow: var(--button-shadow);
 }
 
+.menu-button.active {
+  background-color: var(--accent-color);
+  color: var(--basic-white-color);
+  box-shadow: var(--button-shadow);
+}
 
 /*---------------------PROJECTS------------------*/
 .projects {
@@ -821,6 +817,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding: 40px;
   width: 528px;
   min-height: 581px;
   background: var(--basic-white-color);
@@ -868,10 +865,6 @@ img {
   transform: rotate(90deg);
 }
 
-.modal-contact {
-  padding: 40px;
-}
-
 .modal-title{
   display: block;
   margin-bottom: 12px;
@@ -887,6 +880,13 @@ img {
   width: 100%;
   display: block;
   margin-bottom: 10px;
+}
+
+.modal-contact-coment {
+  position: relative;
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
 }
 
 .contact-icon {
@@ -954,7 +954,6 @@ img {
 .modal-contact-agreement {
   display: block;
   text-align: center;
-  margin-top: 20px;
   margin-bottom: 30px;
 }
 
